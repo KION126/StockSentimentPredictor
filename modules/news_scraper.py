@@ -46,8 +46,8 @@ def clean_text(text):
 
 def save_news_to_csv(news_items):
     # ..news_data 디렉토리 생성
-    os.makedirs('/home/ec2-user/stock_sentiment_predictor/news_data', exist_ok=True)
-    file_path = '/home/ec2-user/stock_sentiment_predictor/news_data/news_data.csv'
+    os.makedirs('/home/ec2-user/stock_sentiment_predictor/data', exist_ok=True)
+    file_path = '/home/ec2-user/stock_sentiment_predictor/data/naver_news_crawling_data.csv'
 
     # 기존 데이터 읽기
     existing_news = set()
